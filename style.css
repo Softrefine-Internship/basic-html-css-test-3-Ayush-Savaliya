@@ -1,0 +1,230 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+.container{
+    /* max-width: 1550px; */
+    height: 900px;
+    position: relative;
+} 
+.back{
+    max-width: 1400px;
+    height: 105vh;
+    margin: 0 auto;
+    background-color: #FEFEFE;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #1A1A1A;
+}
+.orangecircle{
+    height: 20rem;
+    width:20rem;
+    border: 2.4rem solid #FCA424;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-38%,-38%);
+}
+.greencircle{
+    padding:6px;
+    border: 4px solid #0DD39D;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    left: 55%;
+}
+.square{
+    width: 15px;
+    height: 15px;
+}
+.sq_green{
+    background-color: #0DD39D;
+    position: absolute;
+    bottom: 2%;
+    left: 2.8%;
+}
+.sq_yellow{
+    background-color:#FCA424;
+    position: absolute;
+    right:2%;
+    top: 8%;
+    rotate:150deg;
+}
+.hsq {
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    rotate: 45deg;
+}
+.h_sq_1{
+    border: 3.5px solid #CDCDCD;
+    right: 2%;
+    bottom: 40%;
+}
+.h_sq_2{
+    border: 3.5px solid #FCA424;
+    left: 45%;
+    bottom: 3%;
+}
+.sm_sq{
+    width: 0.8rem;
+    height:0.8rem;
+    border: 3.5px solid #FCA424;
+    rotate: 45deg;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+}
+.big_square{
+    width: 20rem;
+    height: 10rem;
+    border: 1rem solid #f0f0f0;
+    rotate: 30deg;
+    position: absolute;
+    right: -12%;
+    bottom: -4%;
+}
+
+/***********************/
+/* SECTION MAIN */
+/***********************/
+
+.main{
+    /* max-width: 1200px; */
+    width: 1200px;
+    height: 90vh;
+    margin: 0 6%;
+    background-color: #f0f0f0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+/**********************/
+/**********************/
+header{
+
+    height: 12rem;
+    background-color: aliceblue;
+    background-image:url(mountain.png);
+    background-size: 1200px 12rem;
+}
+.main-nav{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 4rem;
+}
+
+.navigation{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn:link,
+.btn:visited{
+    height: 2rem;
+    display: flex;
+    padding: 0 1rem;
+    text-decoration: none;
+    align-items: center;
+    color: #CDCDCD;
+    border-radius: 4px;
+    background-color:#a4a4a4;
+}
+.icon{
+    width: 1.8rem;
+    height: 1.6rem;
+}
+
+.nav-img{
+    width: 2rem;
+    height: 2rem;
+}
+/**********************/
+/**********************/
+.detail{
+    height: 10rem;
+    margin: 0 2.2rem;
+    display: flex;
+    justify-content:space-between;
+    gap: 2rem;
+    color: #CDCDCD;
+}
+
+.detail img{
+    display:flex;
+    width: 10rem;
+    height: 10rem;
+    margin-right: -22rem;
+}
+
+.heading{
+    display: flex;
+}
+
+
+.profile{
+    padding: 0 2rem;
+    display:flex;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb35;
+}
+strong{
+    font-weight: 550;
+}
+.chart{
+    font-size: 1rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    display:inline-block;
+    padding: 0.8rem 0.5rem;
+    background-color: #d2d2d2;
+    border-radius: 50%;
+    position: relative;
+}
+
+.chart::before {
+    padding-top: 45%;
+    z-index: 1;
+    content: "";
+    padding: 1.8rem;
+    border: 6px solid #FCA424;
+    border-top-color: #d2d2d2;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
+}
+
+.btn-profile:link,
+.btn-profile:visited{
+    display: inline-block;
+    padding: 6px 1rem;
+    text-decoration: none;
+    border-radius: 2px;
+    background-color: #FCA424;
+    margin-top: 1.6rem;
+}
+
+.text{
+    display: grid;
+}
