@@ -10,30 +10,35 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Test 3</title>
   </head>
   <body>
-    <section class="container">
-      <section class="back">
-        <div class="orangecircle"></div>
-        <div class="greencircle"></div>
-        <div class="square sq_green"></div>
-        <div class="square sq_yellow"></div>
-        <div class="hsq h_sq_1"></div>
-        <div class="hsq h_sq_2"></div>
-        <div class="sm_sq"></div>
-        <div class="big_square"></div>
-      </section>
+    <section class="back">
+      <div class="orangecircle"></div>
+      <div class="greencircle"></div>
+      <div class="square sq_green"></div>
+      <div class="square sq_yellow"></div>
+      <div class="hsq h_sq_1"></div>
+      <div class="hsq h_sq_2"></div>
+      <div class="sm_sq"></div>
+      <div class="big_square"></div>
+
       <section class="main">
         <header class="header">
-          <div class="main-nav">
+          <div class="main-nav flex">
             <div class="logo">
-              <a href="#" class="logolink">
+              <a href="#" class="logolink flex">
                 <img src="img/logo.png" alt="SKS logo" />
                 <p>SKS Funding</p>
               </a>
             </div>
-            <nav class="navigation">
+            <nav class="navigation flex">
               <a href="#" class="btn">NEED HELP</a>
               <a href="#">
                 <ion-icon name="notifications-outline" class="icon"></ion-icon>
@@ -48,15 +53,16 @@
             </nav>
           </div>
           <div class="detail">
+            <ion-icon name="camera-outline" class="icon icon1"></ion-icon>
             <img
               src="img/girl.png"
               alt="girl with yellow background"
               class="detail-img"
             />
             <div class="detail-text">
-              <div class="primary-heading">
-                <h2>Hi,Emma good morning</h2>
-                <ion-icon name="hand" class="icon"></ion-icon>
+              <div class="primary-heading flex">
+                <p>Hi,Emma good morning</p>
+                <ion-icon name="hand-right" class="icon"></ion-icon>
               </div>
               <p>Email-skp.emma1231@gmail.com</p>
               <p>Phone-+91 8893584343</p>
@@ -65,7 +71,7 @@
                 22nd feb 2019
               </p>
             </div>
-            <div class="profile">
+            <div class="profile flex">
               <div class="chart">
                 <p>75%</p>
               </div>
@@ -81,9 +87,9 @@
         </header>
         <section class="main-body">
           <div class="main-body--1">
-            <div class="head">
+            <div class="head flex">
               <h3 class="secondary-heading">ABOUT MY FAMILY</h3>
-              <ion-icon name="more" class="icon"></ion-icon>
+              <ion-icon name="ellipsis-horizontal" class="icon"></ion-icon>
             </div>
             <div class="person">
               <div class="covered-persons">
@@ -148,9 +154,9 @@
               </div>
             </div>
             <div class="about-me">
-              <div class="head head--about-me">
+              <div class="head head--about-me flex">
                 <h3 class="secondary-heading">ABOUT ME</h3>
-                <ion-icon name="more" class="icon"></ion-icon>
+                <ion-icon name="ellipsis-horizontal" class="icon"></ion-icon>
               </div>
               <div class="about-me--detail">
                 <div class="email">
@@ -180,7 +186,7 @@
           </div>
           <div class="main-body--2">
             <nav>
-              <ul class="main-nav-list">
+              <ul class="main-nav-list flex">
                 <li class="dashboard">
                   <a href="#" class="main-nav-link nav--open">
                     <ion-icon name="home" class="nav--icon"></ion-icon>
@@ -188,19 +194,19 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="main-nav-link1">NEW CLAIMS</a>
+                  <a href="#" class="main--link">NEW CLAIMS</a>
                 </li>
                 <li>
-                  <a href="#" class="main-nav-link1">COMPLETED CLAIMS</a>
+                  <a href="#" class="main--link">COMPLETED CLAIMS</a>
                 </li>
                 <li>
-                  <a href="#" class="main-nav-link1">PAST CLAIMS</a>
+                  <a href="#" class="main--link">PAST CLAIMS</a>
                 </li>
                 <li>
-                  <a href="#" class="main-nav-link1">MEMBERS</a>
+                  <a href="#" class="main--link">MEMBERS</a>
                 </li>
                 <li>
-                  <a href="#" class="main-nav-link1">MY CLAIMS</a>
+                  <a href="#" class="main--link">MY CLAIMS</a>
                 </li>
                 <li>
                   <a href="#" class="main-nav-link nav-claims">
@@ -211,7 +217,7 @@
               </ul>
             </nav>
             <div class="card-claim">
-              <div class="card-claim--el">
+              <div class="card-claim--el flex">
                 <div class="claim-no">23</div>
                 <div class="card--person-img">
                   <p>NEW CLAIMS</p>
@@ -241,7 +247,7 @@
                 </div>
               </div>
 
-              <div class="card-claim--el">
+              <div class="card-claim--el flex">
                 <div class="claim-no">76</div>
                 <div class="card--person-img">
                   <p>NEW MEMBERS</p>
@@ -271,7 +277,7 @@
                 </div>
               </div>
 
-              <div class="card-claim--el">
+              <div class="card-claim--el flex">
                 <div class="claim-no">102</div>
                 <div class="card--person-img">
                   <p>TOTAL CLAIMS</p>
@@ -303,7 +309,7 @@
             </div>
             <div class="section--activity">
               <div class="account-info">
-                <div class="account">
+                <div class="account flex">
                   <img
                     src="img/Person/person-6.jpg"
                     alt="girl with curly hair"
@@ -311,7 +317,7 @@
                   <div>
                     <h3 class="secondary-heading">AMELIA KIMANI</h3>
                     <ul class="acc--detail">
-                      <li>
+                      <li class="flex">
                         <ion-icon
                           name="file-tray-full-outline"
                           class="icon"
@@ -320,14 +326,14 @@
                           <strong>Filed : </strong>Thu Jul 10,2018 7:30PM EDT
                         </p>
                       </li>
-                      <li>
+                      <li class="flex">
                         <ion-icon
                           name="calendar-outline"
                           class="icon"
                         ></ion-icon>
                         <p><strong>Due : </strong>Wed Jul 23,2019 12:30PM</p>
                       </li>
-                      <li>
+                      <li class="flex">
                         <div class="flex acc-last-icon">
                           <ion-icon
                             name="location-outline"
@@ -345,12 +351,12 @@
                     </ul>
                   </div>
                 </div>
-                <div class="account">
+                <div class="account flex">
                   <img src="img/Person/person-1.jpg" alt="girl" />
                   <div>
                     <h3 class="secondary-heading">GENEVIEVE JUMA</h3>
                     <ul class="acc--detail">
-                      <li>
+                      <li class="flex">
                         <ion-icon
                           name="file-tray-full-outline"
                           class="icon"
@@ -359,14 +365,14 @@
                           <strong>Filed : </strong>Thu Jul 10,2018 7:30PM EDT
                         </p>
                       </li>
-                      <li>
+                      <li class="flex">
                         <ion-icon
                           name="calendar-outline"
                           class="icon"
                         ></ion-icon>
                         <p><strong>Due : </strong>Wed Jul 23,2019 12:30PM</p>
                       </li>
-                      <li>
+                      <li class="flex">
                         <div class="flex acc-last-icon">
                           <ion-icon
                             name="location-outline"
@@ -384,12 +390,12 @@
                     </ul>
                   </div>
                 </div>
-                <div class="account">
+                <div class="account flex">
                   <img src="img/Person/person-9.jpg" alt="girl" />
                   <div>
                     <h3 class="secondary-heading">THEODORE WACHIRA</h3>
                     <ul class="acc--detail">
-                      <li>
+                      <li class="flex">
                         <ion-icon
                           name="file-tray-full-outline"
                           class="icon"
@@ -398,14 +404,14 @@
                           <strong>Filed : </strong>Thu Jul 10,2018 7:30PM EDT
                         </p>
                       </li>
-                      <li>
+                      <li class="flex">
                         <ion-icon
                           name="calendar-outline"
                           class="icon"
                         ></ion-icon>
                         <p><strong>Due : </strong>Wed Jul 23,2019 12:30PM</p>
                       </li>
-                      <li>
+                      <li class="flex">
                         <div class="flex acc-last-icon">
                           <ion-icon
                             name="location-outline"
@@ -428,7 +434,7 @@
                 <h2 class="activity-heading">ACTIVITY</h2>
                 <div class="act-detail">
                   <h3 class="flex">
-                    <ion-icon name="ellipse" class="icon"></ion-icon>
+                    <ion-icon name="ellipse" class="icon icon1"></ion-icon>
                     Claimed $2000
                   </h3>
                   <ul>
@@ -438,7 +444,7 @@
                 </div>
                 <div class="act-detail">
                   <h3 class="flex">
-                    <ion-icon name="ellipse" class="icon"></ion-icon>
+                    <ion-icon name="ellipse" class="icon icon2"></ion-icon>
                     102 New Members
                   </h3>
                   <ul>
@@ -448,17 +454,61 @@
                 </div>
                 <div class="act-detail">
                   <h3 class="flex">
-                    <ion-icon name="ellipse" class="icon"></ion-icon>
+                    <ion-icon name="ellipse" class="icon icon3"></ion-icon>
                     3 Claims are waiting
                   </h3>
                   <ul>
-                    <li>Please contribute them,they are Waiting for your help</li>
+                    <li>
+                      Please contribute them,they are Waiting for your help
+                    </li>
                     <li>05:40pm</li>
                   </ul>
                 </div>
-                <div class="act-detail ">
+                <div class="act-detail">
                   <h3 class="flex">
-                    <ion-icon name="ellipse" class="icon"></ion-icon>
+                    <ion-icon name="ellipse" class="icon icon"></ion-icon>
+                    102 New Members
+                  </h3>
+                  <ul>
+                    <li>We have 102 registrations check out their profile</li>
+                    <li>05:40pm</li>
+                  </ul>
+                </div>
+                <div class="act-detail">
+                  <h3 class="flex">
+                    <ion-icon name="ellipse" class="icon icon1"></ion-icon>
+                    Claimed $2000
+                  </h3>
+                  <ul>
+                    <li>23 members are got claimed in Washington, D.C.</li>
+                    <li>05:40pm</li>
+                  </ul>
+                </div>
+                <div class="act-detail">
+                  <h3 class="flex">
+                    <ion-icon name="ellipse" class="icon icon2"></ion-icon>
+                    102 New Members
+                  </h3>
+                  <ul>
+                    <li>We have 102 registrations check out their profile</li>
+                    <li>05:40pm</li>
+                  </ul>
+                </div>
+                <div class="act-detail">
+                  <h3 class="flex">
+                    <ion-icon name="ellipse" class="icon icon3"></ion-icon>
+                    3 Claims are waiting
+                  </h3>
+                  <ul>
+                    <li>
+                      Please contribute them,they are Waiting for your help
+                    </li>
+                    <li>05:40pm</li>
+                  </ul>
+                </div>
+                <div class="act-detail">
+                  <h3 class="flex">
+                    <ion-icon name="ellipse" class="icon icon"></ion-icon>
                     102 New Members
                   </h3>
                   <ul>
@@ -479,5 +529,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
       src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"
     ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
