@@ -169,37 +169,47 @@ header{
     height: 2rem;
     border-radius: 2px;
 }
+.navigation::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #fcae3a;
+    position: absolute;
+    border-radius: 50%;
+    top: 3.4%;
+    right:9.1%;
+}
 /**********************/
 .detail{
     margin: 3rem; 
     margin-left: 3.4rem;
-    display: flex;
-    justify-content:space-between;
-    gap: 20rem;
     color: #CDCDCD;
     position: relative;
+    display:flex;
     height: 12rem;
+    gap: 3rem;
 }
 .detail .icon1 {
     background-color: #ebebeb2d;
     padding: 2px;
     position: absolute;
-    bottom: -10%;
+    bottom: -15%;
     right: 1.12%;
     border-radius: 2px;
 }
 .detail .icon1:hover{
     cursor: pointer;
 }
-.detail img{
-    margin-left: 1rem;
+.detail-img{
     width: 18rem;
     height: 18rem;
-    margin-right: -22%;
-    margin-left: 0;
+    object-fit:cover;
+    margin-left:5px;
     border-radius: 3px;
 }
 .detail-text{
+    width: 56rem;
+    font-weight: 450;
     font-size: 12px;
     line-height: 1.8;
     letter-spacing: -0.6px;
@@ -209,8 +219,9 @@ header{
 }
 .profile{
     height: 9.6rem;
+    width: 40rem;
     padding: 0 1.8rem;
-    margin-right: 1rem;
+    margin: 8px 1rem 0 15rem;
     gap: 2rem;
     justify-content: center;
     background-color: #ebebeb35;
@@ -338,7 +349,7 @@ header{
 .main-nav-link:visited,
 .main--link:link,
 .main--link:visited {
-    display: inline-block;
+    /* display: inline-block; */
     text-decoration: none;
     color: #cdcdcd;
     font-weight: 600;
@@ -366,22 +377,26 @@ header{
     transition: all 0.4s;
 }
 .nav--open{
-    justify-content: space-around;
+    gap: 4px;
+    justify-content:center;
+    align-items: center;
     color: #1A1A1A !important;
     font-weight: 900 !important;
 }
 .nav--open ion-icon{
     color: #1A1A1A;
+    height: 8px;
 }
 .dashboard{
     border-bottom: 2px solid #FCA424;
     padding: 1.6rem 1.4rem;
 }
+
 /*************************/
 .card-claim{
     margin: 3rem 2rem 0 2rem;
     display: flex;
-    gap: 2.4rem;
+    gap: 2rem;
     
 }
 .card-claim--el{
@@ -400,7 +415,7 @@ header{
 .card--person-img{
     margin-left: -10px;
     padding: 12px 44px 0 6px;
-    width: 11.6rem;
+    width: 12.4rem;
 }
 .card--person-img .person{
     display: flex;
@@ -422,7 +437,7 @@ header{
     color: #FEFEFE;
     background-color: #0dd39eaf; 
     padding: 8px 3px;
-    margin-left: -18%;
+    margin-left: -17%;
 }
 /******************/
 .section--activity{
@@ -454,7 +469,7 @@ header{
 }
 
 .account .icon{
-    height: 1.8rem;
+    height: 1.4rem;
 }
 
 .account .secondary-heading{
@@ -477,15 +492,53 @@ header{
 .activity{
     box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 10px;
     color: #cdcdcd;
-    height: 36rem;
     padding: 2.2rem 2rem;
-    margin: 2rem 3.2rem 2rem 0;
+    margin: 2rem 3.2rem 0 0;
     position: relative;
+    height: 40rem;
+    overflow: hidden;
+}
+.client-act-history {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 36rem;
     overflow-y: scroll;
-    scrollbar-width:thin;
-    scrollbar-color:red;
 }
 
+.client-act-history::-webkit-scrollbar {
+    width: 12px;
+}
+
+.client-act-history::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+
+.client-act-history::-webkit-scrollbar-thumb {
+    background-color: #FCA424;
+    border-radius: 1rem;
+    border: 2px solid white;
+}
+
+.client-act-history::-webkit-scrollbar-thumb:hover {
+    background-color: #e6951c;
+}
+.client-act-history::after{
+    content: "";border: 1px solid #1a1a1a1b;
+    color: #0aa97e;
+    height:32rem;
+    position: absolute;
+    top: 15.8%;
+    left: 11.5%;
+    z-index: 1;
+}
+.client-act-history:hover,
+.client-act-history:active{
+    cursor: pointer;
+}
 .activity-heading{
     color: #a4a4a4;
     font-weight: 600;
@@ -494,7 +547,10 @@ header{
     border-bottom: 1px solid #1a1a1a1c;
 }
 .act-detail{
-    padding-top: 10px ;
+    padding: 5px 0 ;
+}
+.act-detail:last-child{
+    margin-bottom: 2rem;
 }
 .act-detail h3{
     font-size: 1.4rem;
@@ -505,6 +561,7 @@ header{
 }
 .act-detail ion-icon{
     width: 1rem;
+    z-index: 9;
 }
 .act-detail .icon1{
     color: rgb(83, 180, 219);
@@ -538,6 +595,7 @@ header{
 .account:hover{
     transform: translateY(3px);
     box-shadow: 0 10px 6.4rem rgba(0, 0, 0, 0.091);
+    transition: all 0.4s;
 }
 .icon {
     width: 1.8rem;
@@ -546,9 +604,9 @@ header{
 }
 .primary-heading {
     gap: 6px;
-    margin-bottom: 8px;
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: normal;
 }
 .secondary-heading {
     color: #1A1A1A;
@@ -561,7 +619,9 @@ header{
     color: #b9b9b9;
     margin-top: 2.2rem;
 }
-
+img{
+    object-fit: cover;
+}
 img:hover{
     cursor: pointer;
 }
